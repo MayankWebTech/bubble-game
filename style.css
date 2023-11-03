@@ -1,0 +1,133 @@
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    font-size: 17px;
+  } 
+  html,body{
+    width:100%;
+    height: 100%;
+   
+  }  
+  
+  #main{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(211, 236, 236);
+  }
+
+  #pannel{
+    width:80%;
+    height:85%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+  }
+
+  #panneltop{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(160, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    
+  }
+
+  .elem{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  }
+  h1{
+    color: aliceblue;
+    font-size: 19px;
+
+  }
+  #box{
+    color: rgb(91, 140, 140);
+    background-color: antiquewhite;
+    padding: 1vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  #pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px ;
+    overflow: hidden;
+  
+    border: 1px solid #ccc;
+ 
+  }
+  #bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(160, 212, 212);
+    color: aliceblue;
+    
+  }
+
+  #bubble:hover{
+    cursor: pointer;
+    background-color: rgb(83, 216, 216);
+  }
+
+
+  @media screen and (max-width: 646px){
+
+    #pbtm{
+     
+      gap: 2.5vw;
+      width: 100%;
+      height: calc(100% - 100px);
+      padding: 2vw ;
+      overflow-y: auto;
+   
+    }
+    #bubble{
+      min-width: 40px;
+      width: 6vw;
+      height: 6vw;
+      min-height: 40px;
+  }
+
+  #panneltop{
+   
+  
+    justify-content: center;
+    gap: 4vw;
+    
+  }
+
+  .elem{
+    gap: 5px;
+  }
+ h1{
+  font-size: 15px;
+ }
+ #box{
+   font-size: 13px;
+ }
+
+}
